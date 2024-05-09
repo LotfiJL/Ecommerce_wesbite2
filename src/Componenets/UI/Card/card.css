@@ -1,0 +1,16 @@
+.card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cecece;
+  box-shadow: 0 0 2px 2px #cecece;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #cecece;
+
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}

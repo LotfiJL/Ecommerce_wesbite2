@@ -1,0 +1,74 @@
+.MenuHeader {
+  width: 100%;
+  height: 40px;
+  background: #fefe;
+  border-bottom: 1px solid #cecece;
+  box-shadow: 0 2px 2px -2px #333;
+}
+
+.MenuHeader ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.MenuHeader > ul {
+  display: flex;
+  margin: 0 50px;
+  position: relative;
+}
+
+.MenuHeader > ul > li > span {
+  display: block;
+  line-height: 40px;
+  cursor: pointer;
+  padding: 0 25px;
+  font-size: 14px;
+}
+.MenuHeader > ul > li > span:hover {
+  color: #5ecb4b;
+  font-size: larger;
+}
+
+.MenuHeader > ul > li > ul {
+  position: absolute;
+  background: #fefe;
+  left: 0;
+  right: 0;
+  display: none;
+  border: 1px solid #cecece;
+  z-index: 1;
+}
+
+.MenuHeader > ul > li:hover ul {
+  display: block;
+}
+
+.MenuHeader > ul > li > ul > li {
+  margin: 0 20px;
+  min-width: 150px;
+}
+
+.MenuHeader > ul > li > ul > li {
+  float: left;
+}
+.MenuHeader > ul > li > ul > li > a {
+  font-weight: bold;
+  display: block;
+}
+
+.MenuHeader > ul > li > ul > li > a {
+  padding: 10px;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  color: #707070;
+}
+
+.MenuHeader > ul > li > ul > li > ul > li a {
+  padding: 2px;
+  display: block;
+  font-size: 10px;
+  text-decoration: none;
+  color: #707070;
+  z-index: 1;
+}
