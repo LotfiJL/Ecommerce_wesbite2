@@ -1,10 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useParams } from "react-router-dom";
 import Layout from "../../Componenets/Layout/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { addToCart, getProductDetailsById } from "../../actions/actions";
 import { IoIosArrowForward, IoIosStar, IoMdCart } from "react-icons/io";
-import { BiRupee } from "react-icons/bi";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { MaterialButton } from "../../Componenets/MaterialUI/MaterialUI";
 import "./style.css";

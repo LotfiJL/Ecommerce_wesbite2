@@ -1,7 +1,5 @@
 import React from "react";
 import Layout from "../../Componenets/Layout/Layout";
-import { useSelector } from "react-redux";
-import Carousel from "react-bootstrap/Carousel";
 import "./Home.css";
 // import IMG from "../../../public/banners/banners1.jpg";
 // import "../../../public/banners/banners2.jpg";

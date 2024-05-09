@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import flipkartLogo from "../../images/logo/flipkart.png";
@@ -19,7 +20,6 @@ const Header = (props) => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   const auth = useSelector((state) => state.userReducer);
   const dispatch = useDispatch();
 
@@ -67,6 +67,7 @@ const Header = (props) => {
     const fullNamee = localStorage.getItem("fullName");
     return (
       <DropdownMenu
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
         menu={<a className="fullName">{fullNamee}</a>}
         menus={[
           /**Add labels here  */
@@ -80,6 +81,7 @@ const Header = (props) => {
     return (
       <DropdownMenu
         menu={
+          // eslint-disable-next-line jsx-a11y/anchor-is-valid
           <a
             className="loginButton"
             onClick={() => {
